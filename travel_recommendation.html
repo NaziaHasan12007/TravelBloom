@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelBloom | Discover Your Next Adventure</title>
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="travel_recommendation.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header & Navigation Component -->
+    <header class="site-header">
+        <nav class="navbar">
+            <div class="logo-container">
+                <i class="fa-solid fa-plane-departure logo-icon"></i>
+                <span class="logo-text">TravelBloom</span>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="travel_recommendation.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+
+            <div class="search-container">
+                <input type="text" id="conditionInput" placeholder="Enter a destination or keyword (e.g., beach, temple, Japan)...">
+                <button id="btnSearch" class="btn-search">Search</button>
+                <button id="btnReset" class="btn-reset">Clear</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        <!-- Hero / Home Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Explore The World With Us</h1>
+                <p>Discover breathtaking destinations, vibrant cultures, and unforgettable landmarks tailored just for you. Your journey starts here.</p>
+                <a href="#resultContainer" class="cta-button">Book Your Trip</a>
+            </div>
+
+            <!-- Social Media Icons Sidebar/Footer -->
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </section>
+
+        <!-- Results Section (Populated dynamically via JavaScript) -->
+        <section id="resultContainer" class="results-grid-section">
+            <!-- Dynamic recommendation cards will be injected here using display: grid -->
+        </section>
+    </main>
+
+    <!-- Footer Component -->
+    <footer class="site-footer">
+        <p>&copy; 2026 TravelBloom Inc. All rights reserved.</p>
+    </footer>
+
+    <!-- External JavaScript File -->
+    <script src="travel_recommendation.js"></script>
+</body>
+</html>
